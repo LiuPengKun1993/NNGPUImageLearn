@@ -40,7 +40,7 @@ static const char *nn_temp_acceptEventInterval = "nn_temp_acceptEventInterval";
 - (void)nn_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
     NSTimeInterval date = [NSDate date].timeIntervalSince1970;
     if (date - self.temp_acceptEventInterval < self.nn_acceptEventInterval) {
-        NSLog(@"时间太短，拒绝");
+        NSLog(@"1s之内不允许连续点击");
         return;
     }
     

@@ -29,12 +29,15 @@
 
 #define NNWeakSelf __weak typeof(self) weakSelf = self;
 
+typedef void(^NNUsuallyBlock)(id object, id paramer);
+
 
 #import "UIView+Frame.h"
 #import <GPUImage.h>
 #import <Masonry/Masonry.h>
 #import "UIButton+extension.h"
 #import "UIColor+extension.h"
-
+#import <MBProgressHUD.h>
+#import "MBProgressHUD+MJ.h"
 
 #endif /* PrefixHeader_pch */

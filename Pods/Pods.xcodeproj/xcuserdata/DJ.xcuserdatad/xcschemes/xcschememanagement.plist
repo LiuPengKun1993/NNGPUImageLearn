@@ -4,21 +4,36 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GPUImage.xcscheme_^#shared#^_</key>
+		<key>GPUImage.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Masonry.xcscheme_^#shared#^_</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Pods-NNGPUImageLearn.xcscheme_^#shared#^_</key>
+		<key>Masonry.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-NNGPUImageLearn.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

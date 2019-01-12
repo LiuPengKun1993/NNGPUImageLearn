@@ -14,6 +14,8 @@
 /** 点击cell改变滤镜 */
 - (void)changeFilterWithType:(NSInteger)type;
 - (void)takePhoto;
+- (void)imageButtonClick;
+
 @end
 
 @interface NNBottomView : UIView

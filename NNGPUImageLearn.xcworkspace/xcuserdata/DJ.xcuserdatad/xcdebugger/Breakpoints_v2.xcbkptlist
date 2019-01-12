@@ -9,30 +9,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NNGPUImageLearn/Photographic(&#x62cd;&#x7167;)/Controller/NNCameraViewController.m"
-            timestampString = "568961147.957392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-buttonClicked:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "NNGPUImageLearn/Photographic(&#x62cd;&#x7167;)/Controller/NNCameraViewController+Camera.m"
-            timestampString = "568961153.6461951"
+            timestampString = "568981385.762997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
             landmarkName = "-createdGPUImageCamera:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[NNCameraViewController(Camera) createdGPUImageCamera:]"
+                  moduleName = "NNGPUImageLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DJ/Desktop/GitHub/NNGPUImageLearn/NNGPUImageLearn/Photographic(%E6%8B%8D%E7%85%A7)/Controller/NNCameraViewController+Camera.m"
+                  timestampString = "568980812.922204"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__56-[NNCameraViewController(Camera) createdGPUImageCamera:]_block_invoke"
+                  moduleName = "NNGPUImageLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DJ/Desktop/GitHub/NNGPUImageLearn/NNGPUImageLearn/Photographic(%E6%8B%8D%E7%85%A7)/Controller/NNCameraViewController+Camera.m"
+                  timestampString = "568980812.927953"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "NNGPUImageLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DJ/Desktop/GitHub/NNGPUImageLearn/NNGPUImageLearn/Photographic(%E6%8B%8D%E7%85%A7)/Controller/NNCameraViewController+Camera.m"
+                  timestampString = "568980812.931041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

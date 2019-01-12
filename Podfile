@@ -5,5 +5,6 @@ target 'NNGPUImageLearn' do
 
 pod 'GPUImage'
 pod 'Masonry'
+pod 'MBProgressHUD'
 
 end

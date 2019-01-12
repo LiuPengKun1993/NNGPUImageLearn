@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2264700521E99C4C0047A812 /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264700421E99C4C0047A812 /* UIColor+extension.m */; };
+		2264700A21E9ADD30047A812 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264700821E9ADD30047A812 /* MBProgressHUD+MJ.m */; };
+		2264700B21E9ADD30047A812 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2264700921E9ADD30047A812 /* MBProgressHUD.bundle */; };
+		2264700E21E9BE580047A812 /* NNPictureEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264700D21E9BE580047A812 /* NNPictureEditController.m */; };
+		2264701421E9C5F80047A812 /* NNPictureEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264701321E9C5F80047A812 /* NNPictureEditView.m */; };
+		2264701721E9E25D0047A812 /* NNImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264701621E9E25D0047A812 /* NNImageManager.m */; };
 		428ACD9C4247D40FFC4DFF45 /* libPods-NNGPUImageLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F3946324811160342EE8F /* libPods-NNGPUImageLearn.a */; };
 		E3299307213D360A0015D46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3299305213D360A0015D46C /* Main.storyboard */; };
 		E3299309213D360A0015D46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3299308213D360A0015D46C /* Assets.xcassets */; };
@@ -33,6 +38,15 @@
 		217D4307475C4BCD578309D7 /* Pods-NNGPUImageLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNGPUImageLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNGPUImageLearn/Pods-NNGPUImageLearn.release.xcconfig"; sourceTree = "<group>"; };
 		2264700321E99C4C0047A812 /* UIColor+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
 		2264700421E99C4C0047A812 /* UIColor+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		2264700721E9ADD30047A812 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		2264700821E9ADD30047A812 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		2264700921E9ADD30047A812 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		2264700C21E9BE580047A812 /* NNPictureEditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNPictureEditController.h; sourceTree = "<group>"; };
+		2264700D21E9BE580047A812 /* NNPictureEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNPictureEditController.m; sourceTree = "<group>"; };
+		2264701221E9C5F80047A812 /* NNPictureEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNPictureEditView.h; sourceTree = "<group>"; };
+		2264701321E9C5F80047A812 /* NNPictureEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNPictureEditView.m; sourceTree = "<group>"; };
+		2264701521E9E25D0047A812 /* NNImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNImageManager.h; sourceTree = "<group>"; };
+		2264701621E9E25D0047A812 /* NNImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNImageManager.m; sourceTree = "<group>"; };
 		33922632E995C8FE8CCAF0EE /* Pods-NNGPUImageLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNGPUImageLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNGPUImageLearn/Pods-NNGPUImageLearn.debug.xcconfig"; sourceTree = "<group>"; };
 		539F3946324811160342EE8F /* libPods-NNGPUImageLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNGPUImageLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32992FC213D360A0015D46C /* NNGPUImageLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNGPUImageLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +98,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2264700621E9ADD30047A812 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2264700721E9ADD30047A812 /* MBProgressHUD+MJ.h */,
+				2264700821E9ADD30047A812 /* MBProgressHUD+MJ.m */,
+				2264700921E9ADD30047A812 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		2264700F21E9C5C60047A812 /* PictureEdit */ = {
+			isa = PBXGroup;
+			children = (
+				2264701021E9C5D60047A812 /* Controller */,
+				2264701121E9C5E10047A812 /* View */,
+			);
+			path = PictureEdit;
+			sourceTree = "<group>";
+		};
+		2264701021E9C5D60047A812 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2264700C21E9BE580047A812 /* NNPictureEditController.h */,
+				2264700D21E9BE580047A812 /* NNPictureEditController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2264701121E9C5E10047A812 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2264701221E9C5F80047A812 /* NNPictureEditView.h */,
+				2264701321E9C5F80047A812 /* NNPictureEditView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		67FD04F3A21614205D665F3B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +245,8 @@
 			children = (
 				E3299345213E98A90015D46C /* NNFilterModel.h */,
 				E3299346213E98A90015D46C /* NNFilterModel.m */,
+				2264701521E9E25D0047A812 /* NNImageManager.h */,
+				2264701621E9E25D0047A812 /* NNImageManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +281,7 @@
 		E37FCDF4214949F200EEF0E9 /* Photographic(拍照) */ = {
 			isa = PBXGroup;
 			children = (
+				2264700F21E9C5C60047A812 /* PictureEdit */,
 				E329932C213E706A0015D46C /* Controller */,
 				E329932F213E706A0015D46C /* View */,
 			);
@@ -260,6 +314,7 @@
 		E37FCDF921494A8100EEF0E9 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				2264700621E9ADD30047A812 /* MBProgressHUD */,
 				E3299344213E98800015D46C /* Model */,
 				E3299338213E706A0015D46C /* Category */,
 			);
@@ -326,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E329930C213D360A0015D46C /* LaunchScreen.storyboard in Resources */,
+				2264700B21E9ADD30047A812 /* MBProgressHUD.bundle in Resources */,
 				E3299309213D360A0015D46C /* Assets.xcassets in Resources */,
 				E3299307213D360A0015D46C /* Main.storyboard in Resources */,
 			);
@@ -393,13 +449,17 @@
 				E329934A213E994E0015D46C /* GPUImageBeautifyFilter.m in Sources */,
 				E37FCDF321493F8100EEF0E9 /* NNView.m in Sources */,
 				E3299340213E706A0015D46C /* NNHeaderImageCollectionView.m in Sources */,
+				2264700A21E9ADD30047A812 /* MBProgressHUD+MJ.m in Sources */,
+				2264701721E9E25D0047A812 /* NNImageManager.m in Sources */,
 				E329933E213E706A0015D46C /* ViewController.m in Sources */,
+				2264701421E9C5F80047A812 /* NNPictureEditView.m in Sources */,
 				E329933F213E706A0015D46C /* NNHeaderImageCollectionViewCell.m in Sources */,
 				E3299341213E706A0015D46C /* NNHeaderImageView.m in Sources */,
 				E329933C213E706A0015D46C /* AppDelegate.m in Sources */,
 				E3299342213E706A0015D46C /* NNBottomView.m in Sources */,
 				E329933B213E706A0015D46C /* main.m in Sources */,
 				E3299347213E98A90015D46C /* NNFilterModel.m in Sources */,
+				2264700E21E9BE580047A812 /* NNPictureEditController.m in Sources */,
 				E37FCDFF2149572E00EEF0E9 /* UIButton+extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,7 +604,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D85489FXAD;
-				GCC_PREFIX_HEADER = /Users/DJ/Desktop/NNGPUImageLearn/NNGPUImageLearn/Other/PrefixHeader.pch;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NNGPUImageLearn/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NNGPUImageLearn/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,7 +626,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D85489FXAD;
-				GCC_PREFIX_HEADER = /Users/DJ/Desktop/NNGPUImageLearn/NNGPUImageLearn/Other/PrefixHeader.pch;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NNGPUImageLearn/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NNGPUImageLearn/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

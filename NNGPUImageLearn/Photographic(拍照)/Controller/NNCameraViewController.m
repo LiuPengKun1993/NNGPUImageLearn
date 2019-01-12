@@ -10,6 +10,7 @@
 #import "NNCameraViewController+Camera.h"
 #import "NNTopView.h"
 #import "NNBottomView.h"
+#import "NNPictureEditController.h"
 
 @interface NNCameraViewController ()<NNTopViewDelegate, NNBottomViewDelegate>
 
@@ -41,6 +42,7 @@
     [self.view addSubview:self.imageView];
     [self.stillCamera addTarget:self.imageView];
     [self.stillCamera startCameraCapture];
+    [self changeFilterWithType:0];
 }
 
 #pragma mark - 代理区域
@@ -51,13 +53,12 @@
             [self dismissViewControllerAnimated:NO completion:nil];
             break;
         case 2: // 闪光灯
-        {
             if (self.stillCamera.cameraPosition == AVCaptureDevicePositionFront) {
+                [MBProgressHUD showMBPAlertView:@"只有后置摄像头支持闪光灯哦😁" withSecond:2];
                 return;
             }
             sender.selected = !sender.selected;
             [self resetFlashMode:sender.selected];
-        }
             break;
         case 3: // 反转摄像头
             sender.selected = !sender.selected;
@@ -68,7 +69,13 @@
 
 /** 拍照 */
 - (void)takePhoto {
-    
+    [self.stillCamera capturePhotoAsImageProcessedUpToFilter:self.filter withCompletionHandler:^(UIImage *processedImage, NSError *error) {
+        if (processedImage) {
+            NNPictureEditController *editVC = [[NNPictureEditController alloc] init];
+            editVC.presentImage = processedImage;
+            [self presentViewController:editVC animated:NO completion:nil];
+        }
+    }];
 }
 
 /** 更换滤镜 */

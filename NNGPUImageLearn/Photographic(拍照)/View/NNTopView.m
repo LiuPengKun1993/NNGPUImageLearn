@@ -21,7 +21,7 @@
 #pragma mark - 布局区域
 /** 创建子视图 */
 - (void)creatChildViews {
-    UIButton *backButton = [self creatButtonWithimageName:@"back"];
+    UIButton *backButton = [self creatButtonWithNormalImageName:@"返回" selectedImageName:@"返回"];
     backButton.tag = 1;
     [backButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self);
@@ -29,14 +29,15 @@
         make.height.width.mas_equalTo(30);
     }];
     
-    UIButton *flashButton = [self creatButtonWithimageName:@"flash"];
+    UIButton *flashButton = [self creatButtonWithNormalImageName:@"闪光灯未点亮" selectedImageName:@"闪光灯 点亮"];
     flashButton.tag = 2;
     [flashButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.width.centerY.mas_equalTo(backButton);
-        make.left.equalTo(backButton.mas_right).offset(20);
+        make.centerX.mas_equalTo(self);
     }];
     
-    UIButton *reverseCameraButton = [self creatButtonWithimageName:@"reverseCamera"];
+    UIButton *reverseCameraButton = [self creatButtonWithNormalImageName:@"photo_switch" selectedImageName:@"photo_switch"];
+    
     reverseCameraButton.tag = 3;
     [reverseCameraButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.width.centerY.mas_equalTo(backButton);
@@ -52,10 +53,11 @@
 }
 
 /** 私有方法，创建按钮 */
-- (UIButton *)creatButtonWithimageName:(NSString *)imageName {
+- (UIButton *)creatButtonWithNormalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.nn_acceptEventInterval = 1;
-    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:normalImageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:selectedImageName] forState:UIControlStateSelected];
     [self addSubview:button];
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     return button;
