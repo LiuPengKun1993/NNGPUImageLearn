@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2264700521E99C4C0047A812 /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264700421E99C4C0047A812 /* UIColor+extension.m */; };
+		428ACD9C4247D40FFC4DFF45 /* libPods-NNGPUImageLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F3946324811160342EE8F /* libPods-NNGPUImageLearn.a */; };
+		E3299307213D360A0015D46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3299305213D360A0015D46C /* Main.storyboard */; };
+		E3299309213D360A0015D46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3299308213D360A0015D46C /* Assets.xcassets */; };
+		E329930C213D360A0015D46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E329930A213D360A0015D46C /* LaunchScreen.storyboard */; };
+		E329933B213E706A0015D46C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299328213E706A0015D46C /* main.m */; };
+		E329933C213E706A0015D46C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299329213E706A0015D46C /* AppDelegate.m */; };
+		E329933E213E706A0015D46C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E329932D213E706A0015D46C /* ViewController.m */; };
+		E329933F213E706A0015D46C /* NNHeaderImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299334213E706A0015D46C /* NNHeaderImageCollectionViewCell.m */; };
+		E3299340213E706A0015D46C /* NNHeaderImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299335213E706A0015D46C /* NNHeaderImageCollectionView.m */; };
+		E3299341213E706A0015D46C /* NNHeaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299336213E706A0015D46C /* NNHeaderImageView.m */; };
+		E3299342213E706A0015D46C /* NNBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299337213E706A0015D46C /* NNBottomView.m */; };
+		E3299343213E706A0015D46C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299339213E706A0015D46C /* UIView+Frame.m */; };
+		E3299347213E98A90015D46C /* NNFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299346213E98A90015D46C /* NNFilterModel.m */; };
+		E329934A213E994E0015D46C /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3299349213E994E0015D46C /* GPUImageBeautifyFilter.m */; };
+		E329934D213ED25B0015D46C /* NNCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E329934C213ED25B0015D46C /* NNCameraViewController.m */; };
+		E37FCDED2149179500EEF0E9 /* NNTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FCDEC2149179500EEF0E9 /* NNTopView.m */; };
+		E37FCDF321493F8100EEF0E9 /* NNView.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FCDF221493F8100EEF0E9 /* NNView.m */; };
+		E37FCDFC21494F8F00EEF0E9 /* NNCameraViewController+Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FCDFB21494F8F00EEF0E9 /* NNCameraViewController+Camera.m */; };
+		E37FCDFF2149572E00EEF0E9 /* UIButton+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FCDFE2149572E00EEF0E9 /* UIButton+extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		217D4307475C4BCD578309D7 /* Pods-NNGPUImageLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNGPUImageLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNGPUImageLearn/Pods-NNGPUImageLearn.release.xcconfig"; sourceTree = "<group>"; };
+		2264700321E99C4C0047A812 /* UIColor+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
+		2264700421E99C4C0047A812 /* UIColor+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		33922632E995C8FE8CCAF0EE /* Pods-NNGPUImageLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNGPUImageLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNGPUImageLearn/Pods-NNGPUImageLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		539F3946324811160342EE8F /* libPods-NNGPUImageLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNGPUImageLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32992FC213D360A0015D46C /* NNGPUImageLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNGPUImageLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3299306213D360A0015D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3299308213D360A0015D46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E329930B213D360A0015D46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3299327213E706A0015D46C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E3299328213E706A0015D46C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3299329213E706A0015D46C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E329932A213E706A0015D46C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E329932B213E706A0015D46C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E329932D213E706A0015D46C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E329932E213E706A0015D46C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E3299330213E706A0015D46C /* NNHeaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNHeaderImageView.h; sourceTree = "<group>"; };
+		E3299331213E706A0015D46C /* NNHeaderImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNHeaderImageCollectionView.h; sourceTree = "<group>"; };
+		E3299332213E706A0015D46C /* NNHeaderImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNHeaderImageCollectionViewCell.h; sourceTree = "<group>"; };
+		E3299333213E706A0015D46C /* NNBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNBottomView.h; sourceTree = "<group>"; };
+		E3299334213E706A0015D46C /* NNHeaderImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNHeaderImageCollectionViewCell.m; sourceTree = "<group>"; };
+		E3299335213E706A0015D46C /* NNHeaderImageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNHeaderImageCollectionView.m; sourceTree = "<group>"; };
+		E3299336213E706A0015D46C /* NNHeaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNHeaderImageView.m; sourceTree = "<group>"; };
+		E3299337213E706A0015D46C /* NNBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNBottomView.m; sourceTree = "<group>"; };
+		E3299339213E706A0015D46C /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E329933A213E706A0015D46C /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E3299345213E98A90015D46C /* NNFilterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNFilterModel.h; sourceTree = "<group>"; };
+		E3299346213E98A90015D46C /* NNFilterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNFilterModel.m; sourceTree = "<group>"; };
+		E3299348213E994E0015D46C /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		E3299349213E994E0015D46C /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		E329934B213ED25B0015D46C /* NNCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCameraViewController.h; sourceTree = "<group>"; };
+		E329934C213ED25B0015D46C /* NNCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCameraViewController.m; sourceTree = "<group>"; };
+		E37FCDEB2149179500EEF0E9 /* NNTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNTopView.h; sourceTree = "<group>"; };
+		E37FCDEC2149179500EEF0E9 /* NNTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNTopView.m; sourceTree = "<group>"; };
+		E37FCDF121493F8100EEF0E9 /* NNView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNView.h; sourceTree = "<group>"; };
+		E37FCDF221493F8100EEF0E9 /* NNView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNView.m; sourceTree = "<group>"; };
+		E37FCDFA21494F8F00EEF0E9 /* NNCameraViewController+Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NNCameraViewController+Camera.h"; sourceTree = "<group>"; };
+		E37FCDFB21494F8F00EEF0E9 /* NNCameraViewController+Camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NNCameraViewController+Camera.m"; sourceTree = "<group>"; };
+		E37FCDFD2149572E00EEF0E9 /* UIButton+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+extension.h"; sourceTree = "<group>"; };
+		E37FCDFE2149572E00EEF0E9 /* UIButton+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E32992F9213D360A0015D46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428ACD9C4247D40FFC4DFF45 /* libPods-NNGPUImageLearn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67FD04F3A21614205D665F3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33922632E995C8FE8CCAF0EE /* Pods-NNGPUImageLearn.debug.xcconfig */,
+				217D4307475C4BCD578309D7 /* Pods-NNGPUImageLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A42115A1C7C51090D522777C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				539F3946324811160342EE8F /* libPods-NNGPUImageLearn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E32992F3213D360A0015D46C = {
+			isa = PBXGroup;
+			children = (
+				E32992FE213D360A0015D46C /* NNGPUImageLearn */,
+				E32992FD213D360A0015D46C /* Products */,
+				67FD04F3A21614205D665F3B /* Pods */,
+				A42115A1C7C51090D522777C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E32992FD213D360A0015D46C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E32992FC213D360A0015D46C /* NNGPUImageLearn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E32992FE213D360A0015D46C /* NNGPUImageLearn */ = {
+			isa = PBXGroup;
+			children = (
+				E37FCDEE21493F3C00EEF0E9 /* Base */,
+				E37FCDF4214949F200EEF0E9 /* Photographic(拍照) */,
+				E37FCDF621494A3B00EEF0E9 /* Video(视频) */,
+				E37FCDF921494A8100EEF0E9 /* Tool */,
+				E3299326213E706A0015D46C /* Other */,
+				E3299305213D360A0015D46C /* Main.storyboard */,
+				E3299308213D360A0015D46C /* Assets.xcassets */,
+				E329930A213D360A0015D46C /* LaunchScreen.storyboard */,
+			);
+			path = NNGPUImageLearn;
+			sourceTree = "<group>";
+		};
+		E3299326213E706A0015D46C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E3299327213E706A0015D46C /* AppDelegate.h */,
+				E3299348213E994E0015D46C /* GPUImageBeautifyFilter.h */,
+				E3299349213E994E0015D46C /* GPUImageBeautifyFilter.m */,
+				E3299328213E706A0015D46C /* main.m */,
+				E3299329213E706A0015D46C /* AppDelegate.m */,
+				E329932A213E706A0015D46C /* PrefixHeader.pch */,
+				E329932B213E706A0015D46C /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E329932C213E706A0015D46C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E329934B213ED25B0015D46C /* NNCameraViewController.h */,
+				E329934C213ED25B0015D46C /* NNCameraViewController.m */,
+				E37FCDFA21494F8F00EEF0E9 /* NNCameraViewController+Camera.h */,
+				E37FCDFB21494F8F00EEF0E9 /* NNCameraViewController+Camera.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E329932F213E706A0015D46C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E37FCDEB2149179500EEF0E9 /* NNTopView.h */,
+				E37FCDEC2149179500EEF0E9 /* NNTopView.m */,
+				E3299333213E706A0015D46C /* NNBottomView.h */,
+				E3299337213E706A0015D46C /* NNBottomView.m */,
+				E3299330213E706A0015D46C /* NNHeaderImageView.h */,
+				E3299336213E706A0015D46C /* NNHeaderImageView.m */,
+				E3299331213E706A0015D46C /* NNHeaderImageCollectionView.h */,
+				E3299335213E706A0015D46C /* NNHeaderImageCollectionView.m */,
+				E3299332213E706A0015D46C /* NNHeaderImageCollectionViewCell.h */,
+				E3299334213E706A0015D46C /* NNHeaderImageCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3299338213E706A0015D46C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E329933A213E706A0015D46C /* UIView+Frame.h */,
+				E3299339213E706A0015D46C /* UIView+Frame.m */,
+				2264700321E99C4C0047A812 /* UIColor+extension.h */,
+				2264700421E99C4C0047A812 /* UIColor+extension.m */,
+				E37FCDFD2149572E00EEF0E9 /* UIButton+extension.h */,
+				E37FCDFE2149572E00EEF0E9 /* UIButton+extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E3299344213E98800015D46C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3299345213E98A90015D46C /* NNFilterModel.h */,
+				E3299346213E98A90015D46C /* NNFilterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E37FCDEE21493F3C00EEF0E9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E37FCDEF21493F4300EEF0E9 /* Controller */,
+				E37FCDF021493F4A00EEF0E9 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E37FCDEF21493F4300EEF0E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E329932E213E706A0015D46C /* ViewController.h */,
+				E329932D213E706A0015D46C /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E37FCDF021493F4A00EEF0E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E37FCDF121493F8100EEF0E9 /* NNView.h */,
+				E37FCDF221493F8100EEF0E9 /* NNView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E37FCDF4214949F200EEF0E9 /* Photographic(拍照) */ = {
+			isa = PBXGroup;
+			children = (
+				E329932C213E706A0015D46C /* Controller */,
+				E329932F213E706A0015D46C /* View */,
+			);
+			path = "Photographic(拍照)";
+			sourceTree = "<group>";
+		};
+		E37FCDF621494A3B00EEF0E9 /* Video(视频) */ = {
+			isa = PBXGroup;
+			children = (
+				E37FCDF721494A4800EEF0E9 /* Controller */,
+				E37FCDF821494A4D00EEF0E9 /* View */,
+			);
+			path = "Video(视频)";
+			sourceTree = "<group>";
+		};
+		E37FCDF721494A4800EEF0E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E37FCDF821494A4D00EEF0E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E37FCDF921494A8100EEF0E9 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E3299344213E98800015D46C /* Model */,
+				E3299338213E706A0015D46C /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E32992FB213D360A0015D46C /* NNGPUImageLearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3299312213D360A0015D46C /* Build configuration list for PBXNativeTarget "NNGPUImageLearn" */;
+			buildPhases = (
+				3B4DFEF3B11B2D2EDC230B87 /* [CP] Check Pods Manifest.lock */,
+				E32992F8213D360A0015D46C /* Sources */,
+				E32992F9213D360A0015D46C /* Frameworks */,
+				E32992FA213D360A0015D46C /* Resources */,
+				C103DAF94EC0C135DDED12A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNGPUImageLearn;
+			productName = NNGPUImageLearn;
+			productReference = E32992FC213D360A0015D46C /* NNGPUImageLearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E32992F4213D360A0015D46C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "刘朋坤";
+				TargetAttributes = {
+					E32992FB213D360A0015D46C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E32992F7213D360A0015D46C /* Build configuration list for PBXProject "NNGPUImageLearn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E32992F3213D360A0015D46C;
+			productRefGroup = E32992FD213D360A0015D46C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E32992FB213D360A0015D46C /* NNGPUImageLearn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E32992FA213D360A0015D46C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E329930C213D360A0015D46C /* LaunchScreen.storyboard in Resources */,
+				E3299309213D360A0015D46C /* Assets.xcassets in Resources */,
+				E3299307213D360A0015D46C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B4DFEF3B11B2D2EDC230B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NNGPUImageLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C103DAF94EC0C135DDED12A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NNGPUImageLearn/Pods-NNGPUImageLearn-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNGPUImageLearn/Pods-NNGPUImageLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E32992F8213D360A0015D46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37FCDED2149179500EEF0E9 /* NNTopView.m in Sources */,
+				E3299343213E706A0015D46C /* UIView+Frame.m in Sources */,
+				E37FCDFC21494F8F00EEF0E9 /* NNCameraViewController+Camera.m in Sources */,
+				2264700521E99C4C0047A812 /* UIColor+extension.m in Sources */,
+				E329934D213ED25B0015D46C /* NNCameraViewController.m in Sources */,
+				E329934A213E994E0015D46C /* GPUImageBeautifyFilter.m in Sources */,
+				E37FCDF321493F8100EEF0E9 /* NNView.m in Sources */,
+				E3299340213E706A0015D46C /* NNHeaderImageCollectionView.m in Sources */,
+				E329933E213E706A0015D46C /* ViewController.m in Sources */,
+				E329933F213E706A0015D46C /* NNHeaderImageCollectionViewCell.m in Sources */,
+				E3299341213E706A0015D46C /* NNHeaderImageView.m in Sources */,
+				E329933C213E706A0015D46C /* AppDelegate.m in Sources */,
+				E3299342213E706A0015D46C /* NNBottomView.m in Sources */,
+				E329933B213E706A0015D46C /* main.m in Sources */,
+				E3299347213E98A90015D46C /* NNFilterModel.m in Sources */,
+				E37FCDFF2149572E00EEF0E9 /* UIButton+extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3299305213D360A0015D46C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3299306213D360A0015D46C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E329930A213D360A0015D46C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E329930B213D360A0015D46C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3299310213D360A0015D46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E3299311213D360A0015D46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3299313213D360A0015D46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33922632E995C8FE8CCAF0EE /* Pods-NNGPUImageLearn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D85489FXAD;
+				GCC_PREFIX_HEADER = /Users/DJ/Desktop/NNGPUImageLearn/NNGPUImageLearn/Other/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/NNGPUImageLearn/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liuzhongning.NNGPUImageLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3299314213D360A0015D46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217D4307475C4BCD578309D7 /* Pods-NNGPUImageLearn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D85489FXAD;
+				GCC_PREFIX_HEADER = /Users/DJ/Desktop/NNGPUImageLearn/NNGPUImageLearn/Other/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/NNGPUImageLearn/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liuzhongning.NNGPUImageLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E32992F7213D360A0015D46C /* Build configuration list for PBXProject "NNGPUImageLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3299310213D360A0015D46C /* Debug */,
+				E3299311213D360A0015D46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3299312213D360A0015D46C /* Build configuration list for PBXNativeTarget "NNGPUImageLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3299313213D360A0015D46C /* Debug */,
+				E3299314213D360A0015D46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E32992F4213D360A0015D46C /* Project object */;
+}
