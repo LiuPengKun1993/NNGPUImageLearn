@@ -14,6 +14,6 @@ typedef void (^NNSelectBlock)(NSInteger index);
 
 @property (nonatomic, copy) NNSelectBlock selectBlock;
 
-- (void)show;
+- (void)showWithIndex:(NSInteger)index;
 
 @end

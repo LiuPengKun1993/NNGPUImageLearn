@@ -32,7 +32,7 @@
     [self addGestureRecognizer:dismissTap];
 }
 
-- (void)show {
+- (void)showWithIndex:(NSInteger)index {
     UIWindow *window = [[UIApplication sharedApplication].windows firstObject];
     [window addSubview:self];
     NNWeakSelf
@@ -40,7 +40,7 @@
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         [weakSelf.headerImageCollectionView setTransform:CGAffineTransformMakeTranslation(0, -120)];
     } completion:^(BOOL finished) {
-        
+        [weakSelf.headerImageCollectionView scrollToIndex:index];
     }];
 }
 

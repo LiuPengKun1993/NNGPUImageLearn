@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) GPUImageFilter *filter;
 
+@property (nonatomic, strong) UILabel *titleLabel;
+
 @end

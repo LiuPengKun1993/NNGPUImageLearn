@@ -43,12 +43,13 @@
     [self addSubview:_headerImageView];
     [_headerImageView setImage:newImage];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.height-20, self.width, 20)];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.text = @"滤镜";
-    label.textColor = [UIColor redColor];
-    label.font = [UIFont systemFontOfSize:10];
-    [self addSubview:label];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.height-20, self.width, 20)];
+    self.titleLabel = titleLabel;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.text = @"滤镜";
+    titleLabel.textColor = [UIColor redColor];
+    titleLabel.font = [UIFont systemFontOfSize:10];
+    [self addSubview:titleLabel];
 }
 
 - (void)setFilter:(GPUImageFilter *)filter {

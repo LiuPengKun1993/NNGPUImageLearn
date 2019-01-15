@@ -23,9 +23,9 @@
 
 #pragma mark - 代理区域
 - (void)buttonClickWithType:(NSInteger)type {
-    if (type == 1) { // 美颜相机
+    if (type == 1) { // 拍照
         [self presentViewController:[NSClassFromString(@"NNCameraViewController") new] animated:NO completion:nil];
-    } else { // 美颜相机
+    } else { // 视频
         NSLog(@"444444");
     }
 }

@@ -10,9 +10,11 @@
 #import "NNFilterModel.h"
 
 @interface NNCameraViewController : UIViewController
-
+/** 相机对象 */
 @property (nonatomic, strong) GPUImageStillCamera *stillCamera;
+/** 预览 View */
 @property (nonatomic, strong) GPUImageView *imageView;
+/** 滤镜 */
 @property (nonatomic, strong) GPUImageFilter *filter;
 @property (nonatomic, assign) NSInteger type;
 @property (nonatomic, strong) NNFilterModel *filterModel;

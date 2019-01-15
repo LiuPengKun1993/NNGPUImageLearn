@@ -9,10 +9,18 @@
 #import "NNPictureEditView.h"
 #import "NNHeaderImageView.h"
 
+@interface NNPictureEditView()
+
+/** 索引 */
+@property (nonatomic, assign) NSInteger integer;
+
+@end
+
 @implementation NNPictureEditView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        self.integer = 0;
         self.backgroundColor = [UIColor nn_backgroundColor];
         [self creatChildViews];
     }
@@ -66,11 +74,12 @@
         case 3: {
             NNHeaderImageView *headerImageView = [[NNHeaderImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
             headerImageView.selectBlock = ^(NSInteger index) {
+                self.integer = index;
                 if (self.bottomViewDelegate && [self.bottomViewDelegate respondsToSelector:@selector(changeFilterWithType:)]) {
                     [self.bottomViewDelegate changeFilterWithType:index];
                 }
             };
-            [headerImageView show];
+            [headerImageView showWithIndex:self.integer];
         }
             break;
             

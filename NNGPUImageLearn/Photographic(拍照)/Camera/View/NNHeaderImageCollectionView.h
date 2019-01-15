@@ -15,4 +15,6 @@
 
 + (instancetype)initNNHeaderImageCollectionView:(CGRect)frame clicked:(void (^)(NSInteger type))clicked;
 
+- (void)scrollToIndex:(NSInteger)index;
+
 @end

@@ -19,6 +19,7 @@
 @end
 
 @implementation NNHeaderImageCollectionView
+
 static NSString *NNHeaderImageCollectionViewCellID = @"NNHeaderImageCollectionViewCellID";
 
 + (instancetype)initNNHeaderImageCollectionView:(CGRect)frame clicked:(void (^)(NSInteger))clicked {
@@ -47,6 +48,7 @@ static NSString *NNHeaderImageCollectionViewCellID = @"NNHeaderImageCollectionVi
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NNHeaderImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NNHeaderImageCollectionViewCellID forIndexPath:indexPath];
     cell.filter = self.filterModel.filterArray[indexPath.row];
+    cell.titleLabel.text = self.filterModel.filterTitleArray[indexPath.row];
     return cell;
 }
 
@@ -63,7 +65,19 @@ static NSString *NNHeaderImageCollectionViewCellID = @"NNHeaderImageCollectionVi
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NNHeaderImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NNHeaderImageCollectionViewCellID forIndexPath:indexPath];
+    [self scrollToRowWithIndexPath:indexPath animated:YES];
+    if (self.clicked) {
+        self.clicked(indexPath.row);
+    }
+}
+
+- (void)scrollToIndex:(NSInteger)index {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    [self scrollToRowWithIndexPath:indexPath animated:NO];
+}
+
+- (void)scrollToRowWithIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
+    NNHeaderImageCollectionViewCell *cell = [self dequeueReusableCellWithReuseIdentifier:NNHeaderImageCollectionViewCellID forIndexPath:indexPath];
     CGFloat offsetx = cell.x - self.width * 0.5;
     CGFloat offsetMax = self.contentSize.width - self.width;
     if (offsetx < 0) {
@@ -72,10 +86,7 @@ static NSString *NNHeaderImageCollectionViewCellID = @"NNHeaderImageCollectionVi
         offsetx = offsetMax;
     }
     CGPoint offset = CGPointMake(offsetx, self.contentOffset.y);
-    [self setContentOffset:offset animated:YES];
-    if (self.clicked) {
-        self.clicked(indexPath.row);
-    }
+    [self setContentOffset:offset animated:animated];
 }
 
 #pragma mark - 懒加载区域
